@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/86bf9583cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img class="van-logo" src="images/logo.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>            
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Vanshul</span><br> Goyal from india</h1>
+        </div>
+    </div>
+</div>
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated student with a keen interest in technology, currently pursuing a Bachelor's degree in Electronics and Communication Engineering at Punjab Engineering College, Chandigarh. I have gained experience in full-stack web development through multiple internships, where I developed software solutions to enhance efficiency and streamline business processes. I am skilled in Java, JavaScript, data analysis, project management, and have certifications in Java, MATLAB, and web development. With a strong drive for continuous learning, I am eager to contribute to the IT industry.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Design Web/App interfaces</li>
+                        <li><span>Web development</span><br>Web app Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jan 24 - Dec 24</span><br>Software Development Intern at zHealthEHR</li>
+                        <li><span>Jun 23 - Jul  23</span><br>Business Operations Analyst at Liqo</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>B.Tech from PEC, Chandigarh<br><br>Majors: Electronics and Communication Engineering<br>Minors: Computer Science and Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <img class="services-logo" src="images/code.svg" alt="code">
+                <h2>Web Design</h2>
+                <p>Create visually stunning and functional websites that engage users and deliver seamless browsing experiences. To blend creativity and technical expertise to build websites that reflect your brand, optimize user interaction, and drive business growth.</p>
+            </div>
+            <div>
+                <img class="services-logo" src="images/crop-simple.svg" alt="crop simple">
+                <h2>UI/UX Design</h2>
+                <p>Ensures a delightful user journey across digital platforms. Meticulously craft user interfaces that are intuitive, visually appealing, and enhance overall user satisfaction. By prioritizing user-centered design principles, to create interfaces that seamlessly align with your brand and meet your users' needs.</p>
+            </div>
+            <div>
+                <img class="services-logo" src="images/app-store.svg" alt="app store">
+                <h2>App Design</h2>
+                <p>Combine aesthetics and usability to craft intuitive mobile applications that captivate users. From wireframing to prototyping, a focus on delivering an exceptional user experience, leveraging the latest design trends and technologies to create visually appealing and highly functional apps.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img class="work-img" src="images/work-1.jpg" alt="">
+                <div class="layer">
+                    <h3>Template Generation Website</h3>
+                    <p>The Template Generation Website is a powerful tool that allows users to create, manage, and utilize customizable templates effortlessly. Developed as part of an internship project by UST Global, this user-friendly web application simplifies template creation and provides a seamless user experience.</p>
+                    <a href="https://github.com/valdidar/template_generation_website" target="_blank"><img class="work-logo" src="images/up-right-from-square.svg" alt="up right from square"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img class="work-img" src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>HPC website</h3>
+                    <p>A website to host all the articles for Hindi Press Club. This website is still under development, and feedback is constantly being taken from the club for new features and adjsutments.</p>
+                    <a href="https://valdidar.github.io/hindipressclub/" target="_blank"><img class="work-logo" src="images/up-right-from-square.svg" alt="up right from square"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img class="work-img" src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>portfolio website</h3>
+                    <p>The website you are using, is also developed by me. This was to practice my front end skills and have a website to host all my other projects</p>
+                    <a href="https://valdidar.netlify.app/" target="_blank"><img class="work-logo" src="images/up-right-from-square.svg" alt="up right from square"></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a class="btn" href="#">See more</a> -->
+    </div>
+</div>
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>vanshulg101@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 981 752 8432</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/vanshul_goyal/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="http://linkedin.com/in/vanshul-goyal00/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- <a href="https://github.com/vanshulgoyal101" target="_blank"><i class="fa-brands fa-square-github"></i></a> -->
+                    <a href="https://x.com/goyal_vanshul" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <a href="images/CV_Vanshul Goyal.pdf" target="_blank" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" required placeholder="Your Email">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Created by <span>Vanshul</span> Goyal | &copy; 2024 All rights reserved</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby5gMmXpDRjbPq31qSEwY9mUwW1FsP2EKxeoeijl9UOAwDyxPYm5Fhc-5yzF_1gZa2gZQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "your message has been sent!"
+            setTimeout(function(){ 
+                msg.innerHTML = "" 
+            }, 5000);
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
